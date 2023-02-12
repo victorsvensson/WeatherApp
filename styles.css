@@ -3,14 +3,47 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: hsl(212, 72%, 55%)
+}
+
+.header img {
+    align-items: center;
+    grid-column-start: 2;
 }
 
 .header p{
-    font-size: 25px;
+    grid-column-start: 3;
+    font-size: 150px;
     font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+
+header h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.city {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr;
+    height: 9rem;
+    justify-items: center;
+    background-color: hsl(212, 72%, 55%)
+}
+
+.city h1 {
+    grid-column-start: 2;
+    font-size: 80px;
+    margin: 0;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
 Section { 
@@ -24,4 +57,9 @@ Section {
 
 .TempSection p {
     padding: 10px;
+}
+
+.CurrentWeatherIcon {
+    width: 300px;
+    height: 300px;
 }
